@@ -18,6 +18,8 @@ Változtasd meg a színeket!
 
 /* Alapbeállítások és sötét téma */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--hatter);
   color: var(--szoveg);
@@ -27,7 +29,11 @@ body {
 
 /* Fejléc stílusa */
 header {
-  /*  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2%;
   /*  */
   /*  */
 }
@@ -52,10 +58,12 @@ main {
 }
 
 .cards-container {
-  /*  */
-  /*  */
-  /*  */
-  /*  */
+display: flex;
+flex-direction: row;
+}
+
+.character-sheet {
+  text-align: center;
 }
 
 /* Karakterkártyák stílusa */
@@ -130,4 +138,8 @@ main {
 
 .character-sheet .character-card {
   padding: 5px;
+}
+
+footer {
+  text-align: center;
 }
